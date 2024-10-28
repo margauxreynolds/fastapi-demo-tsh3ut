@@ -23,3 +23,7 @@ def multiply(c: int, d: int):
 @app.get("/square/{a}") # new endpoint added to square a number
 def square(a: int):
     return {"result": a ** 2}
+
+@app.get("/cube/{a}") # another new endpoint added to cube number
+def cube(a: int):
+    return {"result": a ** 3}
