@@ -8,10 +8,10 @@ from mysql.connector import Error
 import json
 import os
 
-DBHOST = "ds2022.cqee4iwdcaph.us-east-1.rds.amazonaws.com"
-DBUSER = "admin"
+DBHOST = os.getenv('DBHOST')
+DBUSER = os.getenv('DBUSER')
 DBPASS = os.getenv('DBPASS')
-DB = "tsh3ut"
+DB = os.getenv('DB')
 
 # db = mysql.connector.connect(user=DBUSER, host=DBHOST, password=DBPASS, database=DB)
 # cur=db.cursor()
